@@ -5,8 +5,8 @@
     --muted-purple: #7B1FA2;
     --dark-text: #2C3E50;
     --off-white: #F8F9FA;
-    --clay-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    --clay-border: 1px solid rgba(255,255,255,0.8);
+    --clay-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --clay-border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 * {
@@ -16,7 +16,6 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: var(--dark-text);
     line-height: 1.6;
     background: linear-gradient(135deg, var(--mint-green) 0%, var(--soft-peach) 100%);
@@ -46,7 +45,7 @@ header {
     height: 120px;
     margin: 0 auto 24px;
     display: block;
-    filter: drop-shadow(0 8px 16px rgba(0,0,0,0.1));
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.1));
 }
 
 h1 {
@@ -116,17 +115,67 @@ a:hover {
     background: white;
     padding: 30px;
     border-radius: 24px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
     margin-bottom: 40px;
-    border: 1px solid rgba(0,0,0,0.02);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+
+.lang-switcher {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.lang-switcher a {
+    text-decoration: none;
+    color: var(--playful-purple);
+    margin: 0 8px;
+}
+
+.lang-switcher span {
+    color: var(--dark-text);
+    margin: 0 8px;
+    cursor: default;
+}
+
+.lang-switcher a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 600px) {
     .container {
         padding: 30px;
         border-radius: 24px;
+        position: relative;
+        /* For switcher positioning if needed */
     }
+
     h1 {
         font-size: 32px;
+    }
+
+    .lang-switcher {
+        position: static;
+        display: inline-block;
+        margin-bottom: 20px;
+        transform: none;
+        top: auto;
+        right: auto;
+        background: white;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
