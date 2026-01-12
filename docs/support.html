@@ -1,204 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support - Panglema (胖了吗)</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
-    <style>
-        .lang-switcher {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-weight: 600;
-        }
-        .lang-switcher a {
-            text-decoration: none;
-            color: #7B68EE;
-            margin: 0 8px;
-        }
-        .lang-switcher span {
-            color: #333;
-            margin: 0 8px;
-            cursor: default;
-        }
-        .lang-switcher a:hover {
-            text-decoration: underline;
-        }
-        .faq-item {
-            margin-bottom: 24px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.6);
-            border-radius: 16px;
-        }
-        .faq-item h3 {
-            font-size: 18px;
-            color: #7B68EE;
-            margin-bottom: 8px;
-        }
-    </style>
 </head>
-<body>
+
+<div class="container">
     <div class="lang-switcher">
         <span>EN</span> | <a href="support-zh.html">中文</a>
     </div>
-    
-    <div class="container">
-        <header>
-            <img src="assets/images/mascot.png" alt="Pangpang" class="mascot">
-            <p class="subtitle">Pangpang is here for you</p>
-            <h1>Support</h1>
-        </header>
+    <header>
+        <img src="assets/images/mascot.png" alt="Pangpang" class="mascot">
+        <p class="subtitle">Pangpang is here for you</p>
+        <h1>Support</h1>
+    </header>
 
-        <section class="card">
-            <h2>Need some comfort or help?</h2>
-            <p>Our goal is to make your body journey as smooth as a Zen morning. If you're experiencing issues with the app or have feedback on how we can better support you, we're all ears.</p>
-        </section>
+    <section class="card">
+        <h2>Need some comfort or help?</h2>
+        <p>Our goal is to make your body journey as smooth as a Zen morning. If you're experiencing issues with the
+            app or have feedback on how we can better support you, we're all ears.</p>
+    </section>
 
-        <section>
-            <h2>Frequently Asked Questions</h2>
-            
-            <div class="faq-item">
-                <h3>📱 Where is my data stored?</h3>
-                <p>All your data is stored <strong>locally on your device only</strong> using secure local storage (SwiftData). We never send your data to any servers. Your device backups (iTunes/Finder/iCloud device backup) will include your app data.</p>
-                <p><strong>Coming in v1.1:</strong> Optional iCloud sync to keep data in sync across your devices.</p>
-            </div>
+    <section>
+        <h2>Frequently Asked Questions</h2>
 
-            <div class="faq-item">
-                <h3>🗑️ How do I delete my data?</h3>
-                <p>You can delete individual check-ins by swiping left in the Timeline view. To delete all data, go to <strong>Settings > Delete All Data</strong>. This action is permanent and cannot be undone.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>🏥 Apple Health not syncing?</h3>
-                <p>Make sure you've granted Panglema permission in the iOS Health app:</p>
-                <ol>
-                    <li>Open the <strong>Health</strong> app</li>
-                    <li>Tap your profile icon (top right)</li>
-                    <li>Go to <strong>Apps > Panglema</strong></li>
-                    <li>Enable permissions for Weight and Steps</li>
-                </ol>
-                <p>You can also request authorization again through Panglema's Settings screen.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>☁️ Will you add iCloud sync?</h3>
-                <p><strong>Yes!</strong> iCloud sync is coming in v1.1 (next update). It will allow you to:</p>
-                <ul>
-                    <li>Sync data across your iPhone and iPad</li>
-                    <li>Automatic cloud backup (in your private iCloud)</li>
-                    <li>Seamless device switching</li>
-                </ul>
-                <p>In v1.0, all data stays only on your device.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>🔒 Can I lock the app with Face ID?</h3>
-                <p><strong>Coming in v1.1!</strong> Face ID/Touch ID app lock will be available in the next update to protect your personal data. For now, your device passcode protects all app data through iOS's secure app sandbox.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>📷 Can I add photos to my check-ins?</h3>
-                <p>Yes! During the check-in flow, tap the photo icon to attach a photo from your library or take a new one. Photos are stored locally and encrypted.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>⚖️ Can I hide the weight feature?</h3>
-                <p>Absolutely. If you prefer to focus on body sensations without weight tracking:</p>
-                <ol>
-                    <li>Go to <strong>Settings</strong></li>
-                    <li>Toggle on <strong>Hide Weight Feature</strong></li>
-                </ol>
-                <p>This will hide all weight-related UI elements throughout the app.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>🌙 Does the app have dark mode?</h3>
-                <p>Yes! You can set your preferred theme in Settings:</p>
-                <ul>
-                    <li><strong>Light:</strong> Always use light theme</li>
-                    <li><strong>Dark:</strong> Always use dark theme</li>
-                    <li><strong>System:</strong> Follow your device's appearance settings</li>
-                </ul>
-            </div>
-
-            <div class="faq-item">
-                <h3>🔔 How do I set up daily reminders?</h3>
-                <p>To receive gentle reminders to check in:</p>
-                <ol>
-                    <li>Go to <strong>Settings</strong></li>
-                    <li>Enable <strong>Daily Reminder</strong></li>
-                    <li>Choose your preferred time</li>
-                </ol>
-                <p>Make sure you've granted notification permissions when prompted.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>🌍 Is Panglema available in other languages?</h3>
-                <p>Yes! Panglema supports both <strong>English</strong> and <strong>Simplified Chinese (简体中文)</strong>. The app automatically detects your device's language setting.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>📊 How are insights calculated?</h3>
-                <p>The Insights screen shows:</p>
-                <ul>
-                    <li><strong>Steps & Energy:</strong> Average daily steps from Apple Health</li>
-                    <li><strong>Weight Trends:</strong> Your weight fluctuations over time (if weight tracking is enabled)</li>
-                    <li><strong>Note Reflections:</strong> Word cloud of frequently used words in your notes</li>
-                </ul>
-                <p>All calculations happen on-device. We never see your data.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>💰 Is Panglema free?</h3>
-                <p>Yes, Panglema is currently free to download and use. We may introduce optional premium features in the future, but core functionality will always remain free.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>🐛 I found a bug. How do I report it?</h3>
-                <p>We're sorry you encountered an issue! Please email us with details:</p>
-                <ul>
-                    <li>What were you trying to do?</li>
-                    <li>What happened instead?</li>
-                    <li>Your device model and iOS version</li>
-                    <li>Screenshots (if possible)</li>
-                </ul>
-                <p>Send to: <a href="mailto:support@panglema-app.newtree.tech">support@panglema-app.newtree.tech</a></p>
-            </div>
-
-            <div class="faq-item">
-                <h3>💡 I have a feature request!</h3>
-                <p>We'd love to hear your ideas! Email us at <a href="mailto:support@panglema-app.newtree.tech">support@panglema-app.newtree.tech</a> with your suggestions. We read every message.</p>
-            </div>
-        </section>
-
-        <section class="card" style="text-align: center;">
-            <h2>Still Need Help?</h2>
-            <p>Drop us a line and we'll get back to you as soon as we finish our meditation.</p>
-            <p style="font-size: 20px; margin-top: 16px;">
-                📧 <a href="mailto:support@panglema-app.newtree.tech">support@panglema-app.newtree.tech</a>
-            </p>
-            <p style="margin-top: 16px; color: #666;">
-                We typically respond within 1-2 business days.
-            </p>
-        </section>
-
-        <section>
-            <h2>Additional Resources</h2>
-            <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="terms.html">Terms of Service</a></li>
-                <li><a href="https://panglema-app.newtree.tech">Official Website</a></li>
-            </ul>
-        </section>
-
-        <div class="footer">
-            <p>&copy; 2026 Panglema. Listening to your body's rhythm.</p>
+        <div class="faq-item">
+            <h3>📱 Where is my data stored?</h3>
+            <p>All your data is stored <strong>locally on your device only</strong> using secure local storage
+                (SwiftData). We never send your data to any servers. Your device backups (iTunes/Finder/iCloud
+                device backup) will include your app data.</p>
+            <p><strong>Coming in v1.1:</strong> Optional iCloud sync to keep data in sync across your devices.</p>
         </div>
+
+        <div class="faq-item">
+            <h3>🗑️ How do I delete my data?</h3>
+            <p>You can delete individual check-ins by swiping left in the Timeline view. To delete all data, go to
+                <strong>Settings > Delete All Data</strong>. This action is permanent and cannot be undone.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3>🏥 Apple Health not syncing?</h3>
+            <p>Make sure you've granted Panglema permission in the iOS Health app:</p>
+            <ol>
+                <li>Open the <strong>Health</strong> app</li>
+                <li>Tap your profile icon (top right)</li>
+                <li>Go to <strong>Apps > Panglema</strong></li>
+                <li>Enable permissions for Weight and Steps</li>
+            </ol>
+            <p>You can also request authorization again through Panglema's Settings screen.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>☁️ Will you add iCloud sync?</h3>
+            <p><strong>Yes!</strong> iCloud sync is coming in v1.1 (next update). It will allow you to:</p>
+            <ul>
+                <li>Sync data across your iPhone and iPad</li>
+                <li>Automatic cloud backup (in your private iCloud)</li>
+                <li>Seamless device switching</li>
+            </ul>
+            <p>In v1.0, all data stays only on your device.</p>
+        </div>
+
+
+        <div class="faq-item">
+            <h3>📷 Can I add photos to my check-ins?</h3>
+            <p>Yes! During the check-in flow, tap the photo icon to attach a photo from your library or take a new
+                one. Photos are stored locally and encrypted.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>⚖️ Can I hide the weight feature?</h3>
+            <p>Absolutely. If you prefer to focus on body sensations without weight tracking:</p>
+            <ol>
+                <li>Go to <strong>Settings</strong></li>
+                <li>Toggle on <strong>Hide Weight Feature</strong></li>
+            </ol>
+            <p>This will hide all weight-related UI elements throughout the app.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>🌙 Does the app have dark mode?</h3>
+            <p>Yes! You can set your preferred theme in Settings:</p>
+            <ul>
+                <li><strong>Light:</strong> Always use light theme</li>
+                <li><strong>Dark:</strong> Always use dark theme</li>
+                <li><strong>System:</strong> Follow your device's appearance settings</li>
+            </ul>
+        </div>
+
+        <div class="faq-item">
+            <h3>🔔 How do I set up daily reminders?</h3>
+            <p>To receive gentle reminders to check in:</p>
+            <ol>
+                <li>Go to <strong>Settings</strong></li>
+                <li>Enable <strong>Daily Reminder</strong></li>
+                <li>Choose your preferred time</li>
+            </ol>
+            <p>Make sure you've granted notification permissions when prompted.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>🌍 Is Panglema available in other languages?</h3>
+            <p>Yes! Panglema supports both <strong>English</strong> and <strong>Simplified Chinese (简体中文)</strong>.
+                The app automatically detects your device's language setting.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>📊 How are insights calculated?</h3>
+            <p>The Insights screen shows:</p>
+            <ul>
+                <li><strong>Steps & Energy:</strong> Average daily steps from Apple Health</li>
+                <li><strong>Weight Trends:</strong> Your weight fluctuations over time (if weight tracking is
+                    enabled)</li>
+                <li><strong>Note Reflections:</strong> Word cloud of frequently used words in your notes</li>
+            </ul>
+            <p>All calculations happen on-device. We never see your data.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>💰 Is Panglema free?</h3>
+            <p>Yes, Panglema is currently free to download and use. We may introduce optional premium features in
+                the future, but core functionality will always remain free.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>🐛 I found a bug. How do I report it?</h3>
+            <p>We're sorry you encountered an issue! Please email us with details:</p>
+            <ul>
+                <li>What were you trying to do?</li>
+                <li>What happened instead?</li>
+                <li>Your device model and iOS version</li>
+                <li>Screenshots (if possible)</li>
+            </ul>
+            <p>Send to: <a href="mailto:support@panglema-app.newtree.tech">support@panglema-app.newtree.tech</a></p>
+        </div>
+
+        <div class="faq-item">
+            <h3>💡 I have a feature request!</h3>
+            <p>We'd love to hear your ideas! Email us at <a
+                    href="mailto:support@panglema-app.newtree.tech">support@panglema-app.newtree.tech</a> with your
+                suggestions. We read every message.</p>
+        </div>
+    </section>
+
+    <section class="card" style="text-align: center;">
+        <h2>Still Need Help?</h2>
+        <p>Drop us a line and we'll get back to you as soon as we finish our meditation.</p>
+        <p style="font-size: 20px; margin-top: 16px;">
+            📧 <a href="mailto:support@panglema-app.newtree.tech">support@panglema-app.newtree.tech</a>
+        </p>
+        <p style="margin-top: 16px; color: #666;">
+            We typically respond within 1-2 business days.
+        </p>
+    </section>
+
+    <section>
+        <h2>Additional Resources</h2>
+        <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="https://panglema-app.newtree.tech">Official Website</a></li>
+        </ul>
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2026 Panglema. Listening to your body's rhythm.</p>
     </div>
+</div>
 </body>
+
 </html>

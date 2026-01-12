@@ -1,204 +1,169 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>支持 - 胖了吗 (Panglema)</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
-    <style>
-        .lang-switcher {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-weight: 600;
-        }
-        .lang-switcher a {
-            text-decoration: none;
-            color: #7B68EE;
-            margin: 0 8px;
-        }
-        .lang-switcher span {
-            color: #333;
-            margin: 0 8px;
-            cursor: default;
-        }
-        .lang-switcher a:hover {
-            text-decoration: underline;
-        }
-        .faq-item {
-            margin-bottom: 24px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.6);
-            border-radius: 16px;
-        }
-        .faq-item h3 {
-            font-size: 18px;
-            color: #7B68EE;
-            margin-bottom: 8px;
-        }
-    </style>
 </head>
-<body>
+
+<div class="container">
     <div class="lang-switcher">
-        <a href="support.html">EN</a> | <a href="support-zh.html">中文</a>
+        <a href="support.html">EN</a> | <span>中文</span>
     </div>
-    
-    <div class="container">
-        <header>
-            <img src="assets/images/mascot.png" alt="胖胖" class="mascot">
-            <p class="subtitle">胖胖在这里陪伴你</p>
-            <h1>支持</h1>
-        </header>
+    <header>
+        <img src="assets/images/mascot.png" alt="胖胖" class="mascot">
+        <p class="subtitle">胖胖在这里陪伴你</p>
+        <h1>支持</h1>
+    </header>
 
-        <section class="card">
-            <h2>需要帮助或安慰吗？</h2>
-            <p>我们的目标是让您的身体旅程像禅意早晨一样顺畅。如果您在使用应用时遇到问题，或者对我们如何更好地支持您有反馈意见，我们洗耳恭听。</p>
-        </section>
+    <section class="card">
+        <h2>需要帮助或安慰吗？</h2>
+        <p>我们的目标是让您的身体旅程像禅意早晨一样顺畅。如果您在使用应用时遇到问题，或者对我们如何更好地支持您有反馈意见，我们洗耳恭听。</p>
+    </section>
 
-        <section>
-            <h2>常见问题</h2>
-            
-            <div class="faq-item">
-                <h3>📱 我的数据存储在哪里？</h3>
-                <p>您的所有数据<strong>仅本地存储在您的设备上</strong>，使用安全的本地存储（SwiftData）。我们从不将您的数据发送到任何服务器。您的设备备份（iTunes/访达/iCloud 设备备份）将包含您的应用数据。</p>
-                <p><strong>v1.1 即将推出：</strong>可选的 iCloud 同步以在您的设备间保持数据同步。</p>
-            </div>
+    <section>
+        <h2>常见问题</h2>
 
-            <div class="faq-item">
-                <h3>🗑️ 如何删除我的数据？</h3>
-                <p>您可以在时间线视图中向左滑动来删除单个记录。要删除所有数据，请前往<strong>设置 > 删除所有数据</strong>。此操作是永久性的，无法撤销。</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>🏥 Apple 健康应用无法同步？</h3>
-                <p>请确保您已在 iOS 健康应用中授予"胖了吗"权限：</p>
-                <ol>
-                    <li>打开<strong>健康</strong>应用</li>
-                    <li>点击右上角的个人资料图标</li>
-                    <li>进入<strong>应用 > 胖了吗</strong></li>
-                    <li>启用体重和步数的权限</li>
-                </ol>
-                <p>您也可以通过"胖了吗"的设置屏幕重新请求授权。</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>☁️ 会添加 iCloud 同步吗？</h3>
-                <p><strong>会的！</strong>iCloud 同步将在 v1.1（下个更新）中推出。它将允许您：</p>
-                <ul>
-                    <li>在 iPhone 和 iPad 间同步数据</li>
-                    <li>自动云备份（在您的私有 iCloud 中）</li>
-                    <li>无缝切换设备</li>
-                </ul>
-                <p>在 v1.0 中，所有数据仅保留在您的设备上。</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>🔒 可以用面容 ID 锁定应用吗？</h3>
-                <p><strong>v1.1 即将推出！</strong>Face ID/Touch ID 应用锁将在下个更新中提供，以保护您的个人数据。目前，您的设备密码通过 iOS 的安全应用沙盒保护所有应用数据。</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>📷 我可以在记录中添加照片吗？</h3>
-                <p>可以！在记录流程中，点击照片图标即可从相册中附加照片或拍摄新照片。照片会被本地存储并加密。</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>⚖️ 我可以隐藏体重功能吗？</h3>
-                <p>当然可以。如果您更喜欢专注于身体感觉而不追踪体重：</p>
-                <ol>
-                    <li>进入<strong>设置</strong></li>
-                    <li>打开<strong>隐藏体重功能</strong>开关</li>
-                </ol>
-                <p>这将隐藏整个应用中所有与体重相关的 UI 元素。</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>🌙 应用有深色模式吗？</h3>
-                <p>有的！您可以在设置中设置您喜欢的主题：</p>
-                <ul>
-                    <li><strong>浅色：</strong>始终使用浅色主题</li>
-                    <li><strong>深色：</strong>始终使用深色主题</li>
-                    <li><strong>跟随系统：</strong>跟随设备的外观设置</li>
-                </ul>
-            </div>
-
-            <div class="faq-item">
-                <h3>🔔 如何设置每日提醒？</h3>
-                <p>要接收温柔的记录提醒：</p>
-                <ol>
-                    <li>进入<strong>设置</strong></li>
-                    <li>启用<strong>每日提醒</strong></li>
-                    <li>选择您喜欢的时间</li>
-                </ol>
-                <p>请确保在提示时授予了通知权限。</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>🌍 "胖了吗"支持其他语言吗？</h3>
-                <p>支持！"胖了吗"同时支持<strong>英语</strong>和<strong>简体中文</strong>。应用会自动检测您设备的语言设置。</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>📊 洞察是如何计算的？</h3>
-                <p>洞察屏幕显示：</p>
-                <ul>
-                    <li><strong>步数与活力：</strong>来自 Apple 健康应用的平均每日步数</li>
-                    <li><strong>体重趋势：</strong>您的体重随时间的波动（如果启用了体重追踪）</li>
-                    <li><strong>笔记反思：</strong>您笔记中常用词汇的词云</li>
-                </ul>
-                <p>所有计算都在设备上进行。我们从不查看您的数据。</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>💰 "胖了吗"免费吗？</h3>
-                <p>是的，"胖了吗"目前可以免费下载和使用。我们将来可能会推出可选的高级功能，但核心功能将始终保持免费。</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>🐛 我发现了一个错误。如何报告？</h3>
-                <p>很抱歉您遇到了问题！请通过电子邮件向我们发送详细信息：</p>
-                <ul>
-                    <li>您试图做什么？</li>
-                    <li>实际发生了什么？</li>
-                    <li>您的设备型号和 iOS 版本</li>
-                    <li>截图（如果可能）</li>
-                </ul>
-                <p>发送至：<a href="mailto:support@panglema-app.newtree.tech">support@panglema-app.newtree.tech</a></p>
-            </div>
-
-            <div class="faq-item">
-                <h3>💡 我有功能建议！</h3>
-                <p>我们很乐意听到您的想法！请通过电子邮件 <a href="mailto:support@panglema-app.newtree.tech">support@panglema-app.newtree.tech</a> 向我们发送您的建议。我们会阅读每一条消息。</p>
-            </div>
-        </section>
-
-        <section class="card" style="text-align: center;">
-            <h2>仍需要帮助？</h2>
-            <p>给我们发送消息，我们完成冥想后会尽快回复您。</p>
-            <p style="font-size: 20px; margin-top: 16px;">
-                📧 <a href="mailto:support@panglema-app.newtree.tech">support@panglema-app.newtree.tech</a>
-            </p>
-            <p style="margin-top: 16px; color: #666;">
-                我们通常会在 1-2 个工作日内回复。
-            </p>
-        </section>
-
-        <section>
-            <h2>其他资源</h2>
-            <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-                <li><a href="privacy-zh.html">隐私政策</a></li>
-                <li><a href="terms-zh.html">服务条款</a></li>
-                <li><a href="https://panglema-app.newtree.tech">官方网站</a></li>
-            </ul>
-        </section>
-
-        <div class="footer">
-            <p>&copy; 2026 胖了吗 (Panglema)。倾听您身体的节奏。</p>
+        <div class="faq-item">
+            <h3>📱 我的数据存储在哪里？</h3>
+            <p>您的所有数据<strong>仅本地存储在您的设备上</strong>，使用安全的本地存储（SwiftData）。我们从不将您的数据发送到任何服务器。您的设备备份（iTunes/访达/iCloud
+                设备备份）将包含您的应用数据。</p>
+            <p><strong>v1.1 即将推出：</strong>可选的 iCloud 同步以在您的设备间保持数据同步。</p>
         </div>
+
+        <div class="faq-item">
+            <h3>🗑️ 如何删除我的数据？</h3>
+            <p>您可以在时间线视图中向左滑动来删除单个记录。要删除所有数据，请前往<strong>设置 > 删除所有数据</strong>。此操作是永久性的，无法撤销。</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>🏥 Apple 健康应用无法同步？</h3>
+            <p>请确保您已在 iOS 健康应用中授予"胖了吗"权限：</p>
+            <ol>
+                <li>打开<strong>健康</strong>应用</li>
+                <li>点击右上角的个人资料图标</li>
+                <li>进入<strong>应用 > 胖了吗</strong></li>
+                <li>启用体重和步数的权限</li>
+            </ol>
+            <p>您也可以通过"胖了吗"的设置屏幕重新请求授权。</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>☁️ 会添加 iCloud 同步吗？</h3>
+            <p><strong>会的！</strong>iCloud 同步将在 v1.1（下个更新）中推出。它将允许您：</p>
+            <ul>
+                <li>在 iPhone 和 iPad 间同步数据</li>
+                <li>自动云备份（在您的私有 iCloud 中）</li>
+                <li>无缝切换设备</li>
+            </ul>
+            <p>在 v1.0 中，所有数据仅保留在您的设备上。</p>
+        </div>
+
+
+        <div class="faq-item">
+            <h3>📷 我可以在记录中添加照片吗？</h3>
+            <p>可以！在记录流程中，点击照片图标即可从相册中附加照片或拍摄新照片。照片会被本地存储并加密。</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>⚖️ 我可以隐藏体重功能吗？</h3>
+            <p>当然可以。如果您更喜欢专注于身体感觉而不追踪体重：</p>
+            <ol>
+                <li>进入<strong>设置</strong></li>
+                <li>打开<strong>隐藏体重功能</strong>开关</li>
+            </ol>
+            <p>这将隐藏整个应用中所有与体重相关的 UI 元素。</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>🌙 应用有深色模式吗？</h3>
+            <p>有的！您可以在设置中设置您喜欢的主题：</p>
+            <ul>
+                <li><strong>浅色：</strong>始终使用浅色主题</li>
+                <li><strong>深色：</strong>始终使用深色主题</li>
+                <li><strong>跟随系统：</strong>跟随设备的外观设置</li>
+            </ul>
+        </div>
+
+        <div class="faq-item">
+            <h3>🔔 如何设置每日提醒？</h3>
+            <p>要接收温柔的记录提醒：</p>
+            <ol>
+                <li>进入<strong>设置</strong></li>
+                <li>启用<strong>每日提醒</strong></li>
+                <li>选择您喜欢的时间</li>
+            </ol>
+            <p>请确保在提示时授予了通知权限。</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>🌍 "胖了吗"支持其他语言吗？</h3>
+            <p>支持！"胖了吗"同时支持<strong>英语</strong>和<strong>简体中文</strong>。应用会自动检测您设备的语言设置。</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>📊 洞察是如何计算的？</h3>
+            <p>洞察屏幕显示：</p>
+            <ul>
+                <li><strong>步数与活力：</strong>来自 Apple 健康应用的平均每日步数</li>
+                <li><strong>体重趋势：</strong>您的体重随时间的波动（如果启用了体重追踪）</li>
+                <li><strong>笔记反思：</strong>您笔记中常用词汇的词云</li>
+            </ul>
+            <p>所有计算都在设备上进行。我们从不查看您的数据。</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>💰 "胖了吗"免费吗？</h3>
+            <p>是的，"胖了吗"目前可以免费下载和使用。我们将来可能会推出可选的高级功能，但核心功能将始终保持免费。</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>🐛 我发现了一个错误。如何报告？</h3>
+            <p>很抱歉您遇到了问题！请通过电子邮件向我们发送详细信息：</p>
+            <ul>
+                <li>您试图做什么？</li>
+                <li>实际发生了什么？</li>
+                <li>您的设备型号和 iOS 版本</li>
+                <li>截图（如果可能）</li>
+            </ul>
+            <p>发送至：<a href="mailto:support@panglema-app.newtree.tech">support@panglema-app.newtree.tech</a></p>
+        </div>
+
+        <div class="faq-item">
+            <h3>💡 我有功能建议！</h3>
+            <p>我们很乐意听到您的想法！请通过电子邮件 <a
+                    href="mailto:support@panglema-app.newtree.tech">support@panglema-app.newtree.tech</a>
+                向我们发送您的建议。我们会阅读每一条消息。</p>
+        </div>
+    </section>
+
+    <section class="card" style="text-align: center;">
+        <h2>仍需要帮助？</h2>
+        <p>给我们发送消息，我们完成冥想后会尽快回复您。</p>
+        <p style="font-size: 20px; margin-top: 16px;">
+            📧 <a href="mailto:support@panglema-app.newtree.tech">support@panglema-app.newtree.tech</a>
+        </p>
+        <p style="margin-top: 16px; color: #666;">
+            我们通常会在 1-2 个工作日内回复。
+        </p>
+    </section>
+
+    <section>
+        <h2>其他资源</h2>
+        <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+            <li><a href="privacy-zh.html">隐私政策</a></li>
+            <li><a href="terms-zh.html">服务条款</a></li>
+            <li><a href="https://panglema-app.newtree.tech">官方网站</a></li>
+        </ul>
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2026 胖了吗 (Panglema)。倾听您身体的节奏。</p>
     </div>
+</div>
 </body>
+
 </html>
